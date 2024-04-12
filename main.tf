@@ -1,6 +1,6 @@
 # Define GitHub provider
 provider "github" {
-  token = var.github_token
+  token = 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
 }
 
 # Create GitHub repository
