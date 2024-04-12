@@ -17,7 +17,7 @@ resource "github_repository" "example" {
 
 # Add collaborator
 resource "collaborator" "example" {
-  repository = github_repository.example.name
+  repository = github-terraform-task-superpupermega
   username   = "softservedata"
   permission = "pull"
 }
