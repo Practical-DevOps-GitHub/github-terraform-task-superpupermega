@@ -16,7 +16,7 @@ resource "github_repository" "example" {
 }
 
 # Add collaborator
-resource "github_repository_collaborator" "example" {
+resource "collaborator" "example" {
   repository = github_repository.example.name
   username   = "softservedata"
   permission = "pull"
