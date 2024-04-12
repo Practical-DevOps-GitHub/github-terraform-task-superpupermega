@@ -78,7 +78,7 @@ EOF
 resource "github_repository_deploy_key" "example" {
   repository = github_repository.example.name
   title      = "DEPLOY_KEY"
-  key        = var.deploy_key
+  key        = ssh-rsa AAAAB3NzaC1yc2EAAAADB/4BAAABAQD02CDoQ7rP4MuusICC9mI5mNZk1Es27SoUNZCu+QsGbi1MKyGW4+pXTyYdI+tiG9u2V+zt3Q64TpXmzNW6pAyRG3JwRzCuNi5n77LAvYlaFuz/wo9SK3dFZyiiBsAPb2PiRlvjtvmOcWL7fMOpFmUcX4Rc4T7e0jFEM+iWcfEkz+Gnux1EPkHRhbEBcUmdbJBhzmEi0lgH+Ez6IlbC5eI46vWjWxdAJop1t9Kh3RQYG/FaGvVDy/ZjnqXPStGJDVAkMvWAC+cJhkpBqirhrUksJWNN/l0mvP675lGaVW7XLAshKLUq+ilP98OoOK/ldtCI2XI3abvRh0jqhB+AriBZ rsa-key-20240412
   read_only  = false
 }
 
@@ -89,5 +89,5 @@ resource "github_repository_deploy_key" "example" {
 resource "github_actions_secret" "pat" {
   repository = github_repository.example.name
   secret_name = "PAT"
-  plaintext_value = var.github_actions_pat
+  plaintext_value = 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
 }
