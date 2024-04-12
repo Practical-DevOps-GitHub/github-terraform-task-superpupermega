@@ -9,7 +9,7 @@ resource "github_repository" "example" {
   description      = "Repository created by Terraform"
   private          = true
   auto_init        = true
-  default_branch   = "develop"
+  default_branch   = develop
   has_issues       = true
   has_projects     = true
   has_wiki         = true
